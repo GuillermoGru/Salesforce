@@ -1,18 +1,27 @@
-# Salesforce DX Project: Next Steps
+Pasos para subir un flow y un custom field a Github
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+1. Preparar playground
 
-## How Do You Plan to Deploy Your Changes?
+Crear un custom field para algún objeto
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Crear un flow que incluya el custom field
 
-## Configure Your Salesforce DX Project
+Crear un paquete nuevo que incluya un flow definition
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+2. Crear el proyecto
 
-## Read All About It
+Usar SFDX: create project with manifest para crear el proyecto y seleccionamos que sea empty para no tener archivos que no nos sirven.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Modificar el archivo package.xml para solo incluir las partes que usa nuestro flow
+
+Recuperar la información desde nuestra Org
+
+3. Subir a Github
+
+Iniciar un repositorio en nuestra carpeta
+
+Crear un gitignore para los archivos sf y sfdx
+
+Hacer un commit
+
+Publicar en Github
